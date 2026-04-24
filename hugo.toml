@@ -2,3 +2,150 @@ baseURL = 'https://example.org/'
 locale = 'en-us'
 title = 'Radio Communication Volunteers of St. Joseph County, IN'
 theme = 'docsy'
+
+layoutDir = 'layouts'
+contentDir = 'content'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableMissingTranslationPlaceholders = true
+enableRobotsTXT = true
+enableGitInfo = true
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[mediaTypes."text/redirects"]
+delimiter = ""
+
+[outputFormats.redirects]
+baseName = "_redirects"
+isPlainText = true
+mediaType = "text/redirects"
+root = true
+
+[permalinks]
+blog = "/:section/:year/:month/:day/:slugorcontentbasename"
+
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
+
+[markup.goldmark.parser.attribute]
+block = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "tango"
+noClasses = false
+
+[outputs]
+home = [ "HTML", "print", "RSS", "redirects"]
+section = [ "HTML", "print", "RSS" ]
+
+[params]
+privacy_policy = "https://policies.google.com/privacy"
+version_menu = "Releases"
+archived_version = false
+version = "0.14.4-dev"
+versionWithBuildId = "0.14.4-dev"
+# github_repo = "https://github.com/google/docsy-example"
+# github_project_repo = "https://github.com/google/docsy"
+github_branch = "main"
+gcs_engine_id = "..."
+offlineSearch = false
+prism_syntax_highlighting = false
+# mainBranchPreviewURL = "https://main--goldydocs.netlify.app/"
+btn-lg = 'class="btn btn-lg btn-{1}" role="button"'
+FA = '<i class="fa-{1} fa-{2} text-{3} px-1"></i>'
+
+  [params.taxonomy]
+  taxonomyCloud = [ "tags", "categories" ]
+  taxonomyCloudTitle = [ "Tag Cloud", "Categories" ]
+  taxonomyPageHeader = [ "tags", "categories" ]
+
+  [params.copyright]
+  authors = "Docsy Authors | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |"
+  from_year = 2_018
+  to_year = "present"
+
+  [params.ui]
+  breadcrumb_disable = false
+  navbar_logo = true
+  navbar_translucent_over_cover_disable = false
+  sidebar_menu_foldable = true
+  sidebar_menu_compact = false
+  sidebar_search_disable = false
+  showLightDarkModeMenu = true
+
+    [params.ui.feedback]
+    enable = true
+    yes = 'Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+    no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.'
+
+    [params.ui.readingtime]
+    enable = false
+
+[[params.links.user]]
+name = "User mailing list"
+url = "https://example.org/mail"
+icon = "fa fa-envelope"
+desc = "Discussion and help from your fellow users"
+
+[[params.links.user]]
+name = "X"
+url = "https://example.org/x"
+icon = "fab fa-x-twitter"
+desc = "Follow us on X to get the latest news!"
+
+[[params.links.user]]
+name = "Stack Overflow"
+url = "https://example.org/stack"
+icon = "fab fa-stack-overflow"
+desc = "Practical questions and curated answers"
+
+[[params.links.developer]]
+name = "Site info"
+url = "/site/"
+icon = "fa-solid fa-hammer"
+desc = "Site build information."
+
+[[params.links.developer]]
+name = "GitHub"
+url = "https://github.com/google/docsy"
+icon = "fab fa-github"
+desc = "Development takes place here!"
+
+[[params.links.developer]]
+name = "Slack"
+url = "https://example.org/slack"
+icon = "fab fa-slack"
+desc = "Chat with other project developers"
+
+[[params.links.developer]]
+name = "Developer mailing list"
+url = "https://example.org/mail"
+icon = "fa fa-envelope"
+desc = "Discuss development issues around the project"
+
+# [security.funcs]
+# getenv = ["^(BRANCH|BUILD_ID|COMMIT_REF|CONTEXT|DEPLOY_ID|NETLIFY|PULL_REQUEST|REVIEW_ID)$"]
+
+# Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:
+[module] 
+workspace = 'themes/docsy'
+
+    [module.hugoVersion]
+    extended = true
+    min = "0.155.0"
+
+    [module.imports]
+    path = "docsy"
+    disable = false

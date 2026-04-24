@@ -2,12 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>http://192.168.1.239:1313/categories/</loc>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>http://192.168.1.239:1313/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>http://192.168.1.239:1313/search/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>http://192.168.1.239:1313/services/</loc>
+  </url><url>
+    <loc>http://192.168.1.239:1313/tags/</loc>
+  </url><url>
+    <loc>http://192.168.1.239:1313/volunteers/</loc>
   </url>
 </urlset>

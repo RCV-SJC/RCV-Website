@@ -3,6 +3,7 @@ Hugo-based website for Radio Communication Volunteers of St. Joseph County, Indi
 
 ## Website Prerequisites
 
+* [Install Node.JS](https://nodejs.org/en/download)
 * [Install Hugo](https://gohugo.io/installation/)
 
 ```sh
@@ -33,3 +34,20 @@ winget install Microsoft.PowerShell
   npm install --save-dev postcss-cli
   npm install -D postcss
   ```
+
+### Favicon Details
+
+The Favicon 📻 was acquired from [Google Fonts](https://fonts.google.com/icons?selected=Material+Symbols+Outlined:radio:FILL@0;wght@500;GRAD@0;opsz@48&icon.query=radio&icon.size=310&icon.color=%231f1f1f)
+
+* No Fill
+* Weight 500
+* Grade 0
+* Optical Size 48px
+* Style
+* * Material Symbols (new)
+* * Outlined
+* Size (varies from 16 to 512)
+* Color #1F1F1F
+
+Download as PNG.  
+To generate a Favicon.ico, check out [Favicon.cc](https://www.favicon.cc/?)
